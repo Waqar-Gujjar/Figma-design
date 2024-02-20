@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/figma.css">
+</head>
+
+<body>
+
+  <!-- navbar fixed -->
+  <nav class="navbar navbar-expand-lg" id="Navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="img" src="img/Logo (1).png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bedrijf te koop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bedrijven gezocht</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Abonnementen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Over ons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <button class="btn">Meld je aan</button>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header align-items-center">
+      <div class="header-box1"> <img class="imgLogo1" src="img/Logo (1).png" alt=""> </div>
+      <div class="header-box2"> <button class="yellow">Meld je aan</button> </div>
+
+
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="my-navbar">
+        <li class="my-navbarItam">
+          <a class="my-navbarLinks" href="#">Bedrijf te koop</a>
+        </li>
+        <li class="my-navbarItam">
+          <a class="my-navbarLinks" href="#">Bedrijven gezocht</a>
+        </li>
+        <li class="my-navbarItam">
+          <a class="my-navbarLinks" href="#">Abonnementen</a>
+        </li>
+        <li class="my-navbarItam">
+          <a class="my-navbarLinks" href="#">Over ons</a>
+        </li>
+        <li class="my-navbarItam">
+          <a class="my-navbarLinks" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+  <!-- main navbar -->
+  <nav class="navbar navbar-expand-lg bg-transparent position-absolute top-0 w-100">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="img" src="img/Logo (1).png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bedrijf te koop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bedrijven gezocht</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Abonnementen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Over ons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <button class="btn">Meld je aan</button>
+    </div>
+  </nav>
+
+  <!-- section1 -->
+  <div id="section1">
+    <div class="container">
+      <h1 class="main-heading">Vergroot je bereik en netwerk met <br>
+        COMPANY LISTING</h1>
+      <div class="row align-items-center gy-5">
+        <div class="col-12 col-lg-6">
+          <div class="first">
+            <h2 class="sub-heading">Snel en succesvol funding ophalen of je bedrijf verkopen</h2>
+            <h5 class="heading3">
+              <i class="fa-solid fa-circle-check"></i> Bespaar tijd
+            </h5>
+            <h5 class="heading3"><i class="fa-solid fa-circle-check"></i> Bespaar geld</h5>
+            <h5 class="heading3"><i class="fa-solid fa-circle-check"></i> Maximaliseer waarde en dealzekerheid</h5>
+            <div class="btn-box">
+              <button class="sub-btn">Plaats een profiel</button>
+
+            </div>
+          </div>
+          <div class="second">
+            <h2 class="sub-heading">Vind jou investering of bedrijf op ons platform</h2>
+            <h5 class="heading3"><i class="fa-solid fa-circle-check"></i> Groot uniek aanbod</h5>
+            <h5 class="heading3"><i class=" fa-solid fa-circle-check"></i> Voordelig, betrouwbaar en transparant</h5>
+            <h5 class="heading3"><i class="fa-solid fa-circle-check"></i> Vind snel en gemakkelijk private investering
+              mogelijkheden voor een goed rendement</h5>
+            <div class="btn-box">
+              <button class="sub-btn">Bekijk het aanbod</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 order-first order-lg-last">
+          <div class="img-box"> <img class="main-img" src="img/section1img1.png" alt=""></div>
+
+        </div>
+      </div>
+      <form>
+        <input type="text" name="search" placeholder="Search..">
+        <i class=" search fa-solid fa-magnifying-glass"></i>
+      </form>
+    </div>
+  </div>
+
+  <!-- section2 -->
+  <div id="section2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6">
+          <div class="img-box">
+            <img class="main-img" src="img/section2img.png" alt="">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 gy-3">
+          <h1 class="main-heading">Het platform voor het plaatsen en vinden van investeringen en overnames</h1>
+          <p class="main-para">Company Listing is het platform voor het plaatsen en vinden van investeringen of
+            overnames.
+            Company Listing brengt ondernemers direct in contact met een uitgebried netwerk van geïnteresseerde
+            investeerders, kopers en ondernemers. Gemakkelijk, snel en toegankelijk voor iedereen. Van start-up tot
+            multinational, van ondernemer tot adviseur, iedereen is welkom, want samen bereiken we meer.
+            Het is onze missie de overname- en investeringsmarkt transparanter, efficiënter, effectiever en
+            toegankelijker
+            te maken, zo besparen ondernemers en investeerders tijd en geld en wordt de kans op een succesvolle deal
+            gemaximaliseerd.
+          </p>
+          <button class="btn">Plaats een profiel</button>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- section3 -->
+  <div id="section3">
+    <div class="container py-3">
+      <div class="heading-box">
+        <h1 class="main-heading">Ondernemers worden efficiënter en effectiever met COMPANY LISTING.</h1>
+      </div>
+      <p class="main-para">Gemakkelijk en snel een verhoogde kans op een succesvolle transactie</p>
+
+
+      <div class="owl-carousel">
+
+        <div class="main-box">
+          <div class="box">
+            <img class="box1-img" src="img/icon1.png" alt="">
+            <h1 class="sub-heading">GROOT UNIEK AANBOD.</h1>
+            <div class="para-box">
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Voordelig vast tarief</p>
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Eenmalige kosten</p>
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Groot netwerk</p>
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Veel gratis extra’s</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-box">
+          <div class="box">
+            <img class="box1-img" src="img/icon2.png" alt="">
+            <h1 class="sub-heading">BETROUWBAAR & TRANSPARANT.</h1>
+            <div class="para-box">
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Voordelig vast tarief</p>
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Eenmalige kosten</p>
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Groot netwerk</p>
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Veel gratis extra’s</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-box">
+          <div class="box">
+            <img class="box1-img" src="img/icon3.png" alt="">
+            <h1 class="sub-heading">GOED RENDEMENT.</h1>
+            <div class="para-box">
+              <p class="sub-para"><i class=" yellow fa-solid fa-circle-check"></i> Voordelig vast tarief</p>
+              <p class="sub-para"><i class=" yellow fa-solid fa-circle-check"></i> Eenmalige kosten</p>
+              <p class="sub-para"><i class=" yellow fa-solid fa-circle-check"></i> Groot netwerk</p>
+              <p class="sub-para"><i class=" yellow fa-solid fa-circle-check"></i> Veel gratis extra’s</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- section4 -->
+  <div id="section4">
+    <div class="container py-2">
+      <div class="heading-box">
+        <h1 class="main-heading">Ondernemers worden efficiënter en effectiever met COMPANY LISTING.</h1>
+      </div>
+      <p class="main-para">Gemakkelijk en snel een verhoogde kans op een succesvolle transactie</p>
+      <div class="owl-carousel owl-theme">
+
+        <div class="main-box">
+          <div class="box">
+            <img class="box1-img" src="img/icon4.png" alt="">
+            <h1 class="sub-heading">GROOT UNIEK AANBOD.</h1>
+            <div class="para-box">
+              <p class="sub-para"><i class=" yellow fa-solid fa-circle-check"></i> Voordelig vast tarief</p>
+              <p class="sub-para"><i class=" yellow fa-solid fa-circle-check"></i> Eenmalige kosten</p>
+              <p class="sub-para"><i class=" yellow fa-solid fa-circle-check"></i> Groot netwerk</p>
+              <p class="sub-para"><i class=" yellow fa-solid fa-circle-check"></i> Veel gratis extra’s</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-box">
+          <div class="box">
+            <img class="box1-img" src="img/icon5.png" alt="">
+            <h1 class="sub-heading">BETROUWBAAR & TRANSPARANT.</h1>
+            <div class="para-box">
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Voordelig vast tarief</p>
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Eenmalige kosten</p>
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Groot netwerk</p>
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Veel gratis extra’s</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-box">
+          <div class="box">
+            <img class="box1-img" src="img/icon6.png" alt="">
+            <h1 class="sub-heading">GOED RENDEMENT.</h1>
+            <div class="para-box">
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Voordelig vast tarief</p>
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Eenmalige kosten</p>
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Groot netwerk</p>
+              <p class="sub-para"><i class="fa-solid fa-circle-check"></i> Veel gratis extra’s</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section5 -->
+  <div id="section5">
+    <div class="container">
+      <div class="heading-box">
+        <h1 class="main-heading">Company Listing is toegankelijk voor iedereen, want samen bereiken we meer</h1>
+      </div>
+      <div class="main-box">
+
+        <div class="box1">
+          <img class="box-img" src="img/section5img1.png" alt="">
+          <h1 class="box-heading">Verkoop & fund raising</h1>
+          <p class="box-para">Ondernemers, start-ups, scale ups, MKB Nederland</p>
+
+        </div>
+        <div class="box2">
+          <img class="box-img" src="img/section5img2.png" alt="">
+          <h1 class="box-heading">Verkoop & fund raising</h1>
+          <p class="box-para">Ondernemers, start-ups, scale ups, MKB Nederland</p>
+
+        </div>
+        <div class="box3">
+          <img class="box-img" src="img/section5img3.png" alt="">
+          <h1 class="box-heading">Verkoop & fund raising</h1>
+          <p class="box-para">Ondernemers, start-ups, scale ups, MKB Nederland</p>
+
+        </div>
+        <div class="box4">
+          <img class="box-img" src="img/section5img4.png" alt="">
+          <h1 class="box-heading">Verkoop & fund raising</h1>
+          <p class="box-para">Ondernemers, start-ups, scale ups, MKB Nederland</p>
+
+        </div>
+        <div class="box5">
+          <img class="box-img" src="img/section5img5.png" alt="">
+          <h1 class="box-heading">Verkoop & fund raising</h1>
+          <p class="box-para">Ondernemers, start-ups, scale ups, MKB Nederland</p>
+
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme">
+
+        <div class="sub-box">
+          <div class="box1">
+            <img class="box-img" src="img/section5img1.png" alt="">
+            <h1 class="box-heading">Verkoop & fund raising</h1>
+            <p class="box-para">Ondernemers, start-ups, scale ups, MKB Nederland</p>
+          </div>
+        </div>
+
+        <div class="sub-box">
+          <div class="box2">
+            <img class="box-img" src="img/section5img2.png" alt="">
+            <h1 class="box-heading">Verkoop & fund raising</h1>
+            <p class="box-para">Ondernemers, start-ups, scale ups, MKB Nederland</p>
+          </div>
+        </div>
+
+
+        <div class="sub-box">
+          <div class="box3">
+            <img class="box-img" src="img/section5img3.png" alt="">
+            <h1 class="box-heading">Verkoop & fund raising</h1>
+            <p class="box-para">Ondernemers, start-ups, scale ups, MKB Nederland</p>
+          </div>
+        </div>
+
+        <div class="sub-box">
+          <div class="box4">
+            <img class="box-img" src="img/section5img4.png" alt="">
+            <h1 class="box-heading">Verkoop & fund raising</h1>
+            <p class="box-para">Ondernemers, start-ups, scale ups, MKB Nederland</p>
+          </div>
+        </div>
+
+        <div class="sub-box">
+          <div class="box5">
+            <img class="box-img" src="img/section5img5.png" alt="">
+            <h1 class="box-heading">Verkoop & fund raising</h1>
+            <p class="box-para">Ondernemers, start-ups, scale ups, MKB Nederland</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- section6 -->
+  <div id="section6">
+    <div class="container py-3 py-lg-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6">
+          <img class="my-img" src="img/section6img1.png" alt="">
+        </div>
+        <div class="col-12 col-lg-6">
+          <h1 class="heading">Online, eenvoudig en snel</h1>
+          <div class="sub-box">
+            <div class="box1">
+              <h5 class="heading-box">Een minuut</h5>
+              <h1 class="main-heading">Dien uw project in</h1>
+              <p class="box-para">Vul de aanvraag online in en ontdek binnen 1 minuut of u in aanmerking komt voor een
+                lening.</p>
+              <div class="circle1">1</div>
+            </div>
+          </div>
+
+          <div class="sub-box">
+            <div class="box2">
+              <h5 class="heading-box">Een minuut</h5>
+              <h1 class="main-heading">Dien uw project in</h1>
+              <p class="box-para">Vul de aanvraag online in en ontdek binnen 1 minuut of u in aanmerking komt voor een
+                lening.</p>
+              <div class="circle2">2</div>
+            </div>
+          </div>
+
+          <div class="sub-box">
+            <div class="box3">
+              <h5 class="heading-box">Een minuut</h5>
+              <h1 class="main-heading">Dien uw project in</h1>
+              <p class="box-para">Vul de aanvraag online in en ontdek binnen 1 minuut of u in aanmerking komt voor een
+                lening.</p>
+              <div class="circle3">3</div>
+            </div>
+          </div>
+          <div class="box4">
+            <div class="my-btn">Doe de quickscan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- section7 -->
+  <div id="section7">
+    <div class="container py-3 py-lg-5">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h1 class="main-heading">Hoe werkt<br>
+            COMPANY LISTING:</h1>
+          <p class="main-para">Stel via het digitale platform Company Listing gemakkelijk en snel een anoniem profiel
+            van je bedrijf of investering op. Voor een voordelig vast tarief zonder verborgen kosten.
+            Kom vervolgens zonder tussenkomst van derden direct in contact met duizenden kopers en investeerders.
+            Ontvang gemiddeld 10 reacties per profiel van kopers of investeerders in je eigen mailbox.
+            Blijf anoniem totdat u er zelf voor kiest om de volgende stap te nemen. Vergroot hiermee de kans op een
+            succesvolle deal en maximaliseer op een efficiënte en voordelige manier de waarde van uw onderneming.</p>
+        </div>
+        <div class="ol-12 col-lg-6 order-first order-lg-last">
+          <img class="main-img" src="img/section7img1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section8 -->
+  <div id="section8">
+    <div class="container py-3 py-lg-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6">
+          <img class="main-img" src="img/section8img1.png" alt="">
+        </div>
+        <div class="col-12 col-lg-6">
+          <h1 class="main-heading">Toegang tot voorbeeld templates en tools voor elke stap in het proces</h1>
+          <p class="main-para">Stel via het digitale platform Company Listing gemakkelijk en snel een anoniem profiel
+            van je bedrijf of investering op. Voor een voordelig vast tarief zonder verborgen kosten.
+            Kom vervolgens zonder tussenkomst van derden direct in contact met duizenden kopers en investeerders.
+            Ontvang gemiddeld 10 reacties per profiel van kopers of investeerders in je eigen mailbox.
+            Blijf anoniem totdat u er zelf voor kiest om de volgende stap te nemen. Vergroot hiermee de kans op een
+            succesvolle deal en maximaliseer op een efficiënte en voordelige manier de waarde van uw onderneming.</p>
+          <div class="box4">
+            <div class="my-btn">Wordt lid</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section9 -->
+  <div id="section9">
+    <div class="container">
+      <h1 class="main-heading">Testemonials</h1>
+      <div class="owl-carousel owl-theme">
+        <div class=" main-box">
+          <div class="box1">
+            <img class="box-img" src="img/image 1.png" alt="">
+            <img class="stars" src="img/Stars.png" alt="">
+            <p class="main-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h1 class="sub-heading">Rose Gonzales</h1>
+            <h5 class="heading1">New York</h5>
+          </div>
+        </div>
+
+        <div class=" main-box">
+          <div class="box2">
+            <img class="box-img" src="img/image 2.png" alt="">
+            <img class="stars" src="img/Stars.png" alt="">
+            <p class="main-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h1 class="sub-heading">John Smith</h1>
+            <h5 class="heading1">Huston, Texax</h5>
+          </div>
+        </div>
+
+        <div class=" main-box">
+          <div class="box3">
+            <img class="box-img" src="img/image 3.png" alt="">
+            <img class="stars" src="img/Stars.png" alt="">
+            <p class="main-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h1 class="sub-heading">Maria Isabella</h1>
+            <h5 class="heading1">New York</h5>
+          </div>
+        </div>
+      </div>
+      <h1 class="main-heading">Gebruikt door de beste in de industrie</h1>
+      <div class="sub-part">
+        <div class="part1">
+          <img class="part-img" src="img/section9paer2img1.png" alt="">
+        </div>
+        <div class="part1">
+          <img class="part-img" src="img/section9paer2img2.png" alt="">
+        </div>
+        <div class="part1">
+          <img class="part-img" src="img/section9paer2img3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section10 -->
+  <div id="section10">
+    <div class="container py-3 py-lg-5">
+      <h1 class="main-heading">Waarom COMPANY LISTING?</h1>
+      <p class="main-para">Snel en gemakkelijk een verhoogde kans op een succesvolle deal</p>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+        <div class="col">
+          <div class="main-box">
+            <div class="img-box1">
+              <img class="pic" src="img/1.png" alt="">
+            </div>
+            <div class="text-box">
+              <h3 class="sub-heading">Gemakkelijk en snel</h3>
+              <p class="sub-para">Bereik in enkele minuten duizenden potentiele kopers of investeerders</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="main-box">
+            <div class="img-box2">
+              <img class="pic" src="img/2.png" alt="">
+            </div>
+            <div class="text-box">
+              <h3 class="sub-heading">Gemakkelijk en snel</h3>
+              <p class="sub-para">Bereik in enkele minuten duizenden potentiele kopers of investeerders</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="main-box">
+            <div class="img-box3">
+              <img class="pic" src="img/3.png" alt="">
+            </div>
+            <div class="text-box">
+              <h3 class="sub-heading">Gemakkelijk en snel</h3>
+              <p class="sub-para">Bereik in enkele minuten duizenden potentiele kopers of investeerders</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="main-box">
+            <div class="img-box3">
+              <img class="pic" src="img/3.png" alt="">
+            </div>
+            <div class="text-box">
+              <h3 class="sub-heading">Gemakkelijk en snel</h3>
+              <p class="sub-para">Bereik in enkele minuten duizenden potentiele kopers of investeerders</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="main-box">
+            <div class="img-box1">
+              <img class="pic" src="img/3.png" alt="">
+            </div>
+            <div class="text-box">
+              <h3 class="sub-heading">Gemakkelijk en snel</h3>
+              <p class="sub-para">Bereik in enkele minuten duizenden potentiele kopers of investeerders</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="main-box">
+            <div class="img-box2">
+              <img class="pic" src="img/3.png" alt="">
+            </div>
+            <div class="text-box">
+              <h3 class="sub-heading">Gemakkelijk en snel</h3>
+              <p class="sub-para">Bereik in enkele minuten duizenden potentiele kopers of investeerders</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="main-box">
+            <div class="img-box2">
+              <img class="pic" src="img/3.png" alt="">
+            </div>
+            <div class="text-box">
+              <h3 class="sub-heading">Gemakkelijk en snel</h3>
+              <p class="sub-para">Bereik in enkele minuten duizenden potentiele kopers of investeerders</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="main-box">
+            <div class="img-box3">
+              <img class="pic" src="img/3.png" alt="">
+            </div>
+            <div class="text-box">
+              <h3 class="sub-heading">Gemakkelijk en snel</h3>
+              <p class="sub-para">Bereik in enkele minuten duizenden potentiele kopers of investeerders</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="main-box">
+            <div class="img-box1">
+              <img class="pic" src="img/3.png" alt="">
+            </div>
+            <div class="text-box">
+              <h3 class="sub-heading">Gemakkelijk en snel</h3>
+              <p class="sub-para">Bereik in enkele minuten duizenden potentiele kopers of investeerders</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- section11 -->
+  <div id="section11">
+    <div class="container py-2 py-lg-5">
+      <h1 class="main-heading">Onze mogelikheden</h1>
+
+      <div class="owl-carousel">
+
+
+        <div class="box1">
+          <h1 class="card-heading">PLAATS.</h1>
+          <div class="heading-box">
+            <div class="heading1">Eenmalig </div>
+            <div class="heading2">€199</div>
+          </div>
+          <p class="box-para">Plaaats uw verkoop of investeringsprofiel op ons platform</p>
+          <div class="icon-para">
+            <p class="sub-para"><i class=" white fa-solid fa-circle-check"></i> Lorem Ipsum Dolor</p>
+            <p class="sub-para"><i class=" white fa-solid fa-circle-check"></i>Lorem Ipsum Dolor Sit Amet</p>
+            <p class="sub-para"><i class=" white fa-solid fa-circle-check"></i> Lorem Ipsum</p>
+            <p class="sub-para"><i class=" white fa-solid fa-circle-check"></i>Lorem Ipsum Dolor</p>
+          </div>
+          <div class="btn-box">
+            <button class="btn1">Meld je nu aan</button>
+          </div>
+        </div>
+
+
+
+        <div class="box2">
+          <h1 class="card-heading">PLAATS.</h1>
+          <div class="heading-box">
+            <div class="heading1">Eenmalig </div>
+            <div class="heading2">€199</div>
+          </div>
+          <p class="box-para">Plaaats uw verkoop of investeringsprofiel op ons platform</p>
+          <div class="icon-para">
+            <p class="sub-para"><i class=" white fa-solid fa-circle-check"></i> Lorem Ipsum Dolor</p>
+            <p class="sub-para"><i class=" white fa-solid fa-circle-check"></i>Lorem Ipsum Dolor Sit Amet</p>
+            <p class="sub-para"><i class=" white fa-solid fa-circle-check"></i> Lorem Ipsum</p>
+            <p class="sub-para"><i class=" white fa-solid fa-circle-check"></i>Lorem Ipsum Dolor</p>
+          </div>
+          <div class="btn-box">
+            <button class="btn2">Meld je nu aan</button>
+          </div>
+        </div>
+
+
+
+        <div class="box3">
+          <h1 class="card-heading">PLAATS.</h1>
+          <div class="heading-box">
+            <div class="heading1">Eenmalig </div>
+            <div class="heading2">€199</div>
+          </div>
+          <p class="box-para">Plaaats uw verkoop of investeringsprofiel op ons platform</p>
+          <div class="icon-para">
+            <p class="sub-para"><i class=" white fa-solid fa-circle-check"></i> Lorem Ipsum Dolor</p>
+            <p class="sub-para"><i class=" white fa-solid fa-circle-check"></i>Lorem Ipsum Dolor Sit Amet</p>
+            <p class="sub-para"><i class=" white fa-solid fa-circle-check"></i> Lorem Ipsum</p>
+            <p class="sub-para"><i class=" white fa-solid fa-circle-check"></i>Lorem Ipsum Dolor</p>
+          </div>
+          <div class="btn-box">
+            <button class="btn3">Meld je nu aan</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--footer  -->
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class=" col-12 col-sm-7 col-md-5">
+          <p class="para1">© Copygight | 2021 | COMPANY LISTING.</p>
+        </div>
+
+        <div class="col-12 col-sm-5 col-md-3">
+          <div class="icon-box">
+            <a href="#"><i class="my-icon fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="my-icon fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="my-icon fa-brands fa-instagram"></i></a>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-4 d-inline-flex">
+          <div class="main-box">
+            <div class="para-box">
+              <p class="main-para">Word lid | Log in</p>
+            </div>
+
+            <div class="img-box">
+              <a href="#">
+                <img class="img-top" src="img/Back to top.png" alt="">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+  <script>
+    $('document').ready(function () {
+      $(window).on("scroll load", function () {
+        if ($(window).scrollTop() > 120) {
+          $("#Navbar").slideDown()
+        } else {
+          $("#Navbar").slideUp()
+        }
+      });
+    });
+
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });
+
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      items: 7,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 3,
+          nav: true,
+          loop: false
+        }
+      }
+    });
+    $('.play').on('click', function () {
+      owl.trigger('play.owl.autoplay', [1000])
+    })
+    $('.stop').on('click', function () {
+      owl.trigger('stop.owl.autoplay')
+    })
+  </script>
+
+</body>
+
+</html>
